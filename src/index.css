@@ -30,6 +30,9 @@ body {
 .main_menu ul li a:hover {
   background-color: #dadada73;
 }
+.main_menu ul li a.active {
+  background-color: #dadada73;
+}
 
 .main_menu h2 {
   margin: 0;
@@ -67,4 +70,21 @@ body {
 
 .create_post {
   color: skyblue !important;
+}
+
+.color {
+  color: #00b894;
+}
+
+.hash {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 2px;
+  font-family: roboto;
+}
+.hash2 {
+  font-size: 100px;
+  font-weight: bold;
+  margin: 2px;
+  font-family: roboto;
 }

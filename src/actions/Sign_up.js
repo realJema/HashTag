@@ -61,7 +61,7 @@ class login extends Component {
     } else {
     return (
       <div className="login_content">
-        <h3>{this.state.title}</h3>  
+        <h3><span className="color hash2">#</span>HASH<span className="color">TAG</span></h3>  
         <form ref="myForm" className="myForm"> 
             <input type="text" ref="name" className="formField" placeholder="FIRST NAME"/>
             <input type="text" ref="name" className="formField" placeholder="LAST NAME"/>

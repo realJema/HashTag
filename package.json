@@ -2,7 +2,7 @@
   "name": "single_page_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/realJema/single_page_app.git",
+  "homepage": "https://github.com/realJema/HashTag.git",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.0",

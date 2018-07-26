@@ -28,7 +28,7 @@ class TagsSelection extends Component {
     } else {
     return (
         <div className="login_content tags">
-        <h3>{this.state.title}</h3>  
+        <h3><span className="color hash2">#</span>HASH<span className="color">TAG</span></h3>  
             <div className="tag_list">
                 {this.state.posts.map((post,i)  => 
                             <span className="tag" onClick={() => alert("Functionality Unavailable")} key={i}>{post}</span>

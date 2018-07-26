@@ -12,53 +12,58 @@ import swal from 'sweetalert';
 
 class News extends Component {
 
-    // variables definition 
-    constructor(props) {
-        super(props)
-        this.state = {
-            posts : [
-                       {
-                          "img": jdc,
-                          "name": "L'UPC n'entend pas se soumettre a la decision du Minat",
-                          "caption":"Le parti historique a fait savoir jeudi qu’il entendait garder ses responsables désignés lors du congrès électif les 6,7 et 8 octobre 2017.",
-                          "likes":56,
-                          "tag": "Journal Du Cameroun",
-                          "id":"1161022966406956503",
-                       },
-                       {
-                          "img":jdc1,
-                          "name":"Presidenttelle 2018, la liste des 28 candidatures enregistrees",
-                          "caption":"La commission en charge de la réception des candidatures pour la présidentielle a refermé ses portes hier 19 juillet.",
-                          "likes":59,
-                          "tag": "Journal Du Cameroun",
-                          "id":"1160844458347054781",
-                       },
-                       {
-                          "img": jdc2,
-                          "name": "Un Candidat declare soutient la candidature de Paul Biya",
-                          "caption":"Isaac Feuzeu, a pris part ce vendredi à une mobilisation de soutien du Canditat Paul Biya",
-                          "likes":56,
-                          "tag": "Journal Du Cameroun",
-                          "id":"1161022966406956503",
-                       },
-                       {
-                          "img": jdc3,
-                          "name": "Le SDF accuse le gouvernement de vouloir endormir mystiquement les camerounais.",
-                          "caption":"Le Social démocratique front a dénoncé jeudi l'arrivée de hauts responsables de loges.",
-                          "likes":56,
-                          "tag": "Journal Du Cameroun",
-                          "id":"1161022966406956503",
-                       },
-                       {
-                          "img":jdc4,
-                          "name":"CAN 2019: Philemon Yang sur les Chantiers de Douala",
-                          "caption":"Ce samedi 21 juillet 2018, le Premier ministre Philemon Yang, sillonnera les stades.",
-                          "likes":59,
-                          "tag": "Journal Du Cameroun",
-                          "id":"1160844458347054781",
-                       }
-                    ]
-        }
+   // variables definition 
+   constructor(props) {
+    super(props)
+    this.state = {
+        posts : [
+                   {
+                      "img": jdc,
+                      "name": "L'UPC n'entend pas se soumettre a la decision du Minat",
+                      "caption":"Le parti historique a fait savoir jeudi qu’il entendait garder ses responsables désignés lors du congrès électif les 6,7 et 8 octobre 2017.",
+                      "likes":56,
+                      "tag": "Journal Du Cameroun",
+                      "id":"1161022966406956503",
+                      "logo":"https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png",
+                    },
+                    {
+                      "img":jdc1,
+                      "name":"Presidenttelle 2018, la liste des 28 candidatures enregistrees",
+                      "caption":"La commission en charge de la réception des candidatures pour la présidentielle a refermé ses portes hier 19 juillet.",
+                      "likes":59,
+                      "tag": "Journal Du Cameroun",
+                      "id":"1160844458347054781",
+                      "logo":"https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png",
+                    },
+                    {
+                      "img": jdc2,
+                      "name": "Un Candidat declare soutient la candidature de Paul Biya",
+                      "caption":"Isaac Feuzeu, a pris part ce vendredi à une mobilisation de soutien du Canditat Paul Biya",
+                      "likes":56,
+                      "tag": "Journal Du Cameroun",
+                      "id":"1161022966406956503",
+                      "logo":"https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png",
+                    },
+                    {
+                      "img": jdc3,
+                      "name": "Le SDF accuse le gouvernement de vouloir endormir mystiquement les camerounais.",
+                      "caption":"Le Social démocratique front a dénoncé jeudi l'arrivée de hauts responsables de loges.",
+                      "likes":56,
+                      "tag": "Journal Du Cameroun",
+                      "id":"1161022966406956503",
+                      "logo":"https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png",
+                    },
+                    {
+                      "img":jdc4,
+                      "name":"CAN 2019: Philemon Yang sur les Chantiers de Douala",
+                      "caption":"Ce samedi 21 juillet 2018, le Premier ministre Philemon Yang, sillonnera les stades.",
+                      "likes":59,
+                      "tag": "Journal Du Cameroun",
+                      "id":"1160844458347054781",
+                      "logo":"https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png",
+                   }
+                ]
+       }
     }
 
     follow(name) {
@@ -89,7 +94,7 @@ class News extends Component {
                                 <a>{post.likes}</a>
                             </div>
                             <div className="btm_bar">
-                              {/*<img className="source" src="https://www.journalducameroun.com/wp-content/themes/jdc/assets/favicons/favicon-32x32.png" width="12px" height="12px" alt="img_source"/> */}
+                              <img className="source" src={post.logo} width="12px" height="12px" alt="img_source"/>
                               <span className="source_name source">{post.tag}</span>
                               <button className="follow" onClick={() => this.follow(post.tag)}>+</button>
                             </div>
