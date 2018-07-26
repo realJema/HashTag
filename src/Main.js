@@ -4,9 +4,11 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Basic from "./web/basic/Basic_Main";
-import cardStyle from "./web/cardStyle/CardStyle_Main";
-import To_Do from "./web/To-Do/To_Do";
+import News from './pages/News';
+import Jobs from './pages/Jobs';
+import Login from './actions/Login';
+import Sign_up from './actions/Sign_up';
+import TagsSelection from './actions/Tags';
 
 class Main extends Component {
     render() {
@@ -14,17 +16,23 @@ class Main extends Component {
         <HashRouter>
           <div className="main">
             <div className="main_menu">
-              <h4 className="title"><span>JEMA</span><br/>-The Tech Guy</h4>
               <ul className="website_list">
-                <li><NavLink to="/basic">Basic</NavLink></li>
-                <li><NavLink to="/cardStyle">Card Styles</NavLink></li>
-                <li><NavLink to="/to_Do">To Do</NavLink></li>
+                <h2><NavLink exact to="/news">HASHTAG</NavLink></h2>
+                <li><NavLink to="/news">News</NavLink></li>
+                <li><NavLink to="/jobs">Jobs</NavLink></li>
+              </ul>
+              <ul className="website_list">
+                <li><NavLink className="create_post" to="/news">POST</NavLink></li>
+                <li><NavLink to="/sign_up">SIGN UP</NavLink></li>
+                <li><NavLink to="/login">LOGIN IN</NavLink></li>
               </ul>
             </div>
             <div className="page_frame">
-              <Route path="/basic" component={Basic}/>
-              <Route path="/cardStyle" component={cardStyle}/>
-              <Route path="/to_Do" component={To_Do}/>
+              <Route exact path="/news" component={News}/>
+              <Route path="/jobs" component={Jobs}/>
+              <Route path="/sign_up" component={Sign_up}/>
+              <Route path="/login" component={Login}/>
+              <Route path="/tags" component={TagsSelection}/>
             </div>
           </div>
         </HashRouter>

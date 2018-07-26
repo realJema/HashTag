@@ -1,79 +1,70 @@
-/*Main Menu :   */
-/*code for main menu */
-
-html, body, #root {
-  height: 100%;
-  margin: 0;
+body {
+  margin: 0
 }
-.main_menu{
-  background-color: rgb(63, 165, 212);
-  position: fixed;
-  float: left;
-  width: 15%;
-  height: 100%;
-  word-wrap: break-word;
-}
-.page_frame{
-  background-color: rgb(228, 228, 228);
-  margin-left: 15%;
-  width: 85%;
-  min-height: 100%;
-}
-.website_list {
-  width: 100%;
+.main_menu ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
   padding: 0;
+  margin: 0;
+  height: inherit;
 }
 
-.main {
-    display: flex;
-    height: 100%;
+.main_menu ul li {
+  height: inherit;
 }
 
-.links {
-  color: red;
-}
-
-.website_list li a{
-  color: white !important;
-  text-decoration: none !important;
-  padding: 10%;
-  width: 80%;
+.main_menu ul li a {
   display: block;
-}
-.website_list li a:hover{
-  color: black !important;
-}
-.website_list li:hover{
-  background-color: rgb(250, 250, 250);
-  text-color: black;
-}
-
-.title {
-  padding: 15% 10%;
-  font-family: Roboto;
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  TEXT-ALIGN: CENTER;
-  background-color: gray;
-  margin-top: 0;
-}
-.title span {
-  font-size: 25px;
-}
-/* End for main menu */
-
-
-/* Second website : chatApp */
-/*for second website */
-.main_calc {
-  margin-left: 30% !important;
-  background-color: black;
-  width: 350px;
-  max-height: 400px;
-}
-.calc_screen {
-  background-color: white;
-  max-height: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 20px;
 }
 
-/* End for second website */
+.main_menu ul li a:hover {
+  background-color: #dadada73;
+}
+
+.main_menu h2 {
+  margin: 0;
+  height: inherit;
+  margin-right: 10%;
+}
+.main_menu h2 a {
+  display: block;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.main_menu {
+  z-index: 1;
+  display: flex;
+  height: 60px;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #f9fbfb;
+  padding-left: 1.3em;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.create_post {
+  color: skyblue !important;
+}
