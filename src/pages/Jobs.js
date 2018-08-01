@@ -65,7 +65,7 @@ class Jobs extends Component {
     }
 
     render() {
-        if(this.state.posts){
+        if(0 !== 0){
             return (
             <div>
                 <Jumbo title="Jobs" slogan="Go through Jobs offers"/>
@@ -91,7 +91,7 @@ class Jobs extends Component {
             );
         }
         else {
-            return <div>no data</div>
+            return <div ><img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="unavilaible"/></div>
         }
     }
 }
